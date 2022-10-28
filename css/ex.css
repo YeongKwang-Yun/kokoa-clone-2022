@@ -36,3 +36,17 @@ form 이란 건 2가지 속성을 가지고 있음.
 하나하나 하려고 하지말고 ShortCut 이용하기.
 
     nav>ul>li*4>a
+
+CSS 에서 Box 모델의 메커니즘이 중요함. padding 과 box size 와의 관계.
+ > box-sizing: border-box = CSS에게 "padding을 늘리더라도 신경쓰지마. 내 box-size를 늘리면 안돼."
+
+span = width 값을 늘릴 수는 있지만, height 값을 늘릴 수는 없음. 딱 글자 크기만큼 되기 때문에.
+      만약에 늘리고 싶으면 display: block; 로 값을 변경해줘야 함.
+       * 추가적으로 block 의 테두리를 둥글게 조절하는 border-radius 에서 원으로 만들어주고 싶다면,
+       border-radius: (width 값의 절반 or 50%)로 테두리를 원으로 바꿔줄 수 있음.
+
+position: absolute; 는 position: relative; 와 함께 움직여야 함.
+ > Why?
+  > 내가 absolute를 주려는 곳을 감싸고 있는 container에 position: relative;를 줌.
+  > 가장 가까운 relative를 가진 부모 기준으로 움직이는 것임.
+   
