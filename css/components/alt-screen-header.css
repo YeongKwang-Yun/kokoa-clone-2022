@@ -1,0 +1,47 @@
+.alt-header {
+  padding: 40px 25px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+
+.alt-header__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.alt-header__column {
+  width: 33%;
+}
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__column span :last-child {
+  margin-left: 30px;
+}
+
+#chat-screen .alt-header,
+#chat-screen .status-bar {
+  background-color: #abc1d1;
+}
+
+#chat-screen .alt-header {
+  z-index: 1;
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+
+/*   z-index = 레이어,  absolute position이나  fixed position 에서 유용하게 */
