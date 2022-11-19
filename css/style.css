@@ -12,6 +12,7 @@
 @import "components/badge.css";
 @import "components/red-dot.css";
 @import "components/icon-raw.css";
+@import "components/no.css";
 
 /* Screens */
 @import "screens/login.css";

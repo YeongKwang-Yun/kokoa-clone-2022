@@ -112,3 +112,28 @@
 .open-post__heart-count span {
   margin-left: 3px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
+
+/* will-change = 일종의 시스템 보조
+따라서 will-change: transform; 을 해주면, 시스템한테 
+여기 transform 되는게 맞아. 라고 알려줌
+-> 그래픽카드를 이용해 애니메이션 가속화 가능 */
